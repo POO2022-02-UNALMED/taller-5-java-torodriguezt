@@ -17,7 +17,7 @@ public class Pez extends Animal {
 	}
 	
 	public Pez() {
-		this(null, 0, null, 0, null, 0);
+		this(null, 0, null, null, null, 0);
 	}
 	
 	public static int cantidadPeces() {
