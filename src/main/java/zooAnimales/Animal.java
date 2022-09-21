@@ -77,14 +77,14 @@ public class Animal {
 	
 	public static String totalPorTipo() {
 		
-		String mensaje = "Mi nombre es " + Animal.nombre + "tengo una edad de  " + Animal.edad + "habito en " + Animal.habitat + "y mi genero es " + Animal.genero + "la zona en la que me ubico es " + Animal.zona.get(0) + ", en el " + zona.get(0).getZoo;
+		String mensaje = "Mamiferos:" + Mamifero.cantidadMamiferos() + "\nAves:" + Ave.cantidadAves() + "\nReptiles" + Reptil.cantidadReptiles() + "\nPeces:" + Pez.cantidadPeces() + "\nAnfibios:" + Anfibio.cantidadAnfibios();
 	
 		return mensaje;
 	}
 	
 	public String toString() {
 		if (zona.get(0).getZoo() != null)
-			return "Mi nombre es " +  nombre + "tengo una edad de" + edad + "habito en " + habitat + "y mi genero es  " + genero +", la zona en la que me ubico es " + zona.get(0) + "en el" + zona.get(0).getZoo();
+			return "Mi nombre es " +  nombre + "tengo una edad de" + edad + "habito en " + habitat + "y mi genero es  " + genero +", la zona en la que me ubico es " + zona.get(0) + "en el" + zona.getZoo();
 		else
 			return "Mi nombre es " +  nombre + "tengo una edad de" + edad + "habito en " + habitat + "y mi genero es  " + genero;
 	
