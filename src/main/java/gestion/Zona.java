@@ -15,7 +15,7 @@ public class Zona {
 	}
 	
 	public Zona() {
-		this(null, null, null);
+		
 	}
 	
 	
