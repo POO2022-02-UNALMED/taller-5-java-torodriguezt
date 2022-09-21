@@ -81,7 +81,7 @@ public class Animal {
 	
 	public String toString() {
 		if (Zona.get(0).getZoo() != null)
-			return "Mi nombre es " +  nombre + "tengo una edad de" + edad + "habito en " + habitat + "y mi genero es  " + genero +", la zona en la que me ubico es " + Zona.get(0) + "en el" + Zona.get(0).getZoo();
+			return "Mi nombre es " +  nombre + "tengo una edad de" + edad + "habito en " + habitat + "y mi genero es  " + genero +", la zona en la que me ubico es " + zonas.get(0) + "en el" + zonas.get(0).getZoo();
 		else
 			return
 					"Mi nombre es " +  nombre + "tengo una edad de" + edad + "habito en " + habitat + "y mi genero es  " + genero;
