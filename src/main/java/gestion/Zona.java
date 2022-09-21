@@ -27,11 +27,11 @@ public class Zona {
 		this.nombre = nombre;
 	}
 
-	public Zoologico[] getZoo() {
+	public Zoologico getZoo() {
 		return zoo;
 	}
 
-	public void setZoo(Zoologico[] zoo) {
+	public void setZoo(Zoologico zoo) {
 		this.zoo = zoo;
 	}
 
