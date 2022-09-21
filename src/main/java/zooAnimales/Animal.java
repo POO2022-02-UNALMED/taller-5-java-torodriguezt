@@ -12,7 +12,7 @@ public class Animal {
 	private String genero;
 	private ArrayList<Zona> zona = new ArrayList<Zona>();
 	
-	public Animal(String nombre, int edad, String genero, String habitat) {
+	public Animal(String nombre, int edad, String habitat, String genero) {
 		this.nombre = nombre;
 		this.edad = edad;
 		this.genero = genero;
@@ -20,7 +20,7 @@ public class Animal {
 	}
 	
 	public Animal() {
-		this(null, 0, null, null);
+		
 	}
 	
 	public int getTotalAnimales() {
