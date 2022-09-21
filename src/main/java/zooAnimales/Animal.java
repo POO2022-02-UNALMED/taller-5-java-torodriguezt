@@ -77,7 +77,7 @@ public class Animal {
 	
 	public static String totalPorTipo() {
 		
-		String mensaje = "Mamiferos: ";
+		String mensaje = "Mi nombre es " + Animal.nombre + "tengo una edad de  " + Animal.edad + "habito en " + Animal.habitat + "y mi genero es " + Animal.genero + "la zona en la que me ubico es " + Animal.zona[0] + ", en el " + Animal.zoo;
 	
 		return mensaje;
 	}
