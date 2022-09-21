@@ -77,7 +77,7 @@ public class Animal {
 	
 	public static String totalPorTipo() {
 		
-		String mensaje = "Mamiferos:" 
+		String mensaje = "Mamiferos:";
 	
 		return mensaje;
 	}
