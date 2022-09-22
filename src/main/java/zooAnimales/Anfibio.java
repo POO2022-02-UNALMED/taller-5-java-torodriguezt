@@ -21,8 +21,8 @@ public class Anfibio extends Animal{
 		
 	}
 	
-	public static void cantidadAnfibios() {
-		listado.size();
+	public static int cantidadAnfibios() {
+		return listado.size();
 	}
 	
 	public ArrayList<Anfibio> getListado() {
