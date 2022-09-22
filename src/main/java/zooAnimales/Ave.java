@@ -12,7 +12,8 @@ public class Ave extends Animal {
 	                                                                                                
 	public Ave(String nombre, int edad, String habitat, String genero, String colorPlumas) {        
 		super(nombre, edad, habitat, genero);                                                       
-		this.colorPlumas = colorPlumas;                                                             
+		this.colorPlumas = colorPlumas;   
+		Ave.listado.add(this);
 		                                                                                            
 	}                                                                                               
 	                                                                                                
@@ -21,16 +22,16 @@ public class Ave extends Animal {
 	}                                                                                               
 	                                                                                                
 	public static int cantidadAves() {                                                              
-		return listado.size();                                                                      
+		return Ave.listado.size();                                                                     
 		                                                                                            
 	}                                                                                               
 	                                                                                                
 	public ArrayList<Ave> getListado() {                                                            
-		return listado;                                                                             
+		return Ave.listado;                                                                             
 	}                                                                                               
                                                                                                     
 	public void setListado(ArrayList<Ave> listado) {                                                
-		this.listado = listado;                                                                     
+		Ave.listado = listado;                                                                     
 	}                                                                                               
                                                                                                     
 	public String getColorPlumas() {                                                                
@@ -47,15 +48,13 @@ public class Ave extends Animal {
 	                                                                                                
 	public static Ave crearHalcon(String nombre, int edad, String genero) {                                
 		Ave halcon = new Ave(nombre, edad, "montanas", genero, "cafe glorioso");                    
-		halcones++;                                                                                 
-		listado.add(halcon);                                                                        
+		halcones++;                                                                                                                                                    
 		return halcon;                                                                              
 	}                                                                                               
 	                                                                                                
 	public static Ave crearAguila(String nombre, int edad, String genero) {                                
 		Ave aguila = new Ave(nombre, edad, "montanas", genero, "blanco y amarillo");                
-		aguilas++;                                                                                  
-		listado.add(aguila);                                                                        
+		aguilas++;                                                                                                                                                        
 		return aguila;                                                                              
 	}     
 }
