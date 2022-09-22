@@ -10,7 +10,7 @@ public class Animal {
 	private int edad;
 	private String habitat;
 	private String genero;
-	private static Zona zona;
+	private ArrayList<Zona> zona;
 	
 	public Animal(String nombre, int edad, String habitat, String genero) {
 		this.nombre = nombre;
@@ -63,11 +63,11 @@ public class Animal {
 		this.genero = genero;
 	}
 
-	public Zona getZona() {
+	public ArrayList<Zona> getZona() {
 		return zona;
 	}
 
-	public void setZona(Zona zona) {
+	public void setZona(ArrayList<Zona> zona) {
 		this.zona = zona;
 	}
 
@@ -77,14 +77,13 @@ public class Animal {
 	
 	public static String totalPorTipo() {
 		
-		String mensaje = "Mamiferos: " + Mamifero.cantidadMamiferos() + "\n" + 
-						"Aves: " + Ave.cantidadAves() + "\n" + "Reptiles: " + Reptil.cantidadReptiles() + "\n" + "Peces: " + Pez.cantidadPeces() + "\n" + "Anfibios: " + Anfibio.cantidadAnfibios();
+		String mensaje = "Mamiferos: " + Mamifero.cantidadMamiferos() + "\n" + "Aves: " + Ave.cantidadAves() + "\n" + "Reptiles: " + Reptil.cantidadReptiles() + "\n" + "Peces: " + Pez.cantidadPeces() + "\n" + "Anfibios: " + Anfibio.cantidadAnfibios();
 		                
 		return mensaje;
 	}
 	
 	public String toString() {
-		if (zona!=null)
+		if (zona!=null && zona.get(0).getZoo() != null)
 			return "Mi nombre es " + nombre + ", tengo una edad de " + edad +", habito en " + habitat + " y mi genero es " + genero + ", la zona en la que me ubico es " + zona + ", en el " + zona.getZoo();
 		else
 			return "Mi nombre es " + nombre + ", tengo una edad de " + edad +", habito en " + habitat + " y mi genero es " + genero;
