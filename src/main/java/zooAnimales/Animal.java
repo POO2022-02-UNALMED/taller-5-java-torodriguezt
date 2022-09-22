@@ -17,10 +17,11 @@ public class Animal {
 		this.edad = edad;
 		this.genero = genero;
 		this.habitat = habitat;
+		totalAnimales++;
 	}
 	
 	public Animal() {
-		
+		this(null, 0, null, null);
 	}
 	
 	public int getTotalAnimales() {
