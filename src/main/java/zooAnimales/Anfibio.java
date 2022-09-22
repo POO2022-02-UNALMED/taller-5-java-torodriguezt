@@ -48,9 +48,9 @@ public class Anfibio extends Animal{
 	public void setVenenoso(boolean venenoso) {
 		this.venenoso = venenoso;
 	}
-
+	
 	public String movimiento() {
-		return "nadar";
+		return "saltar";
 	}
 	
 	public static Anfibio crearRana(String nombre, int edad, String genero) {
